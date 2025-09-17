@@ -32,4 +32,10 @@ public class Mage extends Personnage {
         this.puissanceSort = puissanceSort;
     }
 
+    @Override
+    public String toString() {
+        String s = super.toString();
+        s += ", mana: " + mana + ", puissanceSort: " + puissanceSort;
+        return s;
+    }
 }

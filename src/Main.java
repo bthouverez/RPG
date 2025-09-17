@@ -29,7 +29,7 @@ public class Main {
 //            System.out.println(g2.getNom() + " a gagné !");
 //        }
 
-        Mage m1 = new Mage("Bob", 80, 8);
-        System.out.println(m1.toString());
+        Mage m1 = new Mage("Bob", 80, 8, 60, 20);
+        System.out.println(m1);
     }
 }
