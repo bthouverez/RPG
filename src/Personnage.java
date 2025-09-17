@@ -3,21 +3,22 @@ import java.util.Random;
 public class Personnage {
     protected String nom;
     protected int pointsDeVie;
+    protected int pointsDeVieMax;
     protected int forceFrappe;
     protected Arme arme;
 
     public Personnage() {
-        System.out.println("Création d'un Personnage");
         this.nom = "Personnage";
         this.pointsDeVie = 100;
+        this.pointsDeVieMax = 100;
         this.forceFrappe = 10;
         this.arme = null;
     }
 
     public Personnage(String nom, int pointsDeVie, int force) {
-        System.out.println("Création d'un Personnage paramétré");
         this.nom = nom;
         this.pointsDeVie = pointsDeVie;
+        this.pointsDeVieMax = pointsDeVie;
         this.forceFrappe = force;
         this.arme = null;
     }
@@ -39,6 +40,9 @@ public class Personnage {
         return arme;
     }
 
+    public int getPointsDeVieMax() {
+        return pointsDeVieMax;
+    }
     public void setArme(Arme arme) {
         this.arme = arme;
     }
@@ -53,6 +57,10 @@ public class Personnage {
 
     public void setPointsDeVie(int pointsDeVie) {
         this.pointsDeVie = pointsDeVie;
+    }
+
+    public void setPointsDeVieMax(int pointsDeVieMax) {
+        this.pointsDeVieMax = pointsDeVieMax;
     }
 
     public void attaquer(Personnage adversaire) {
@@ -80,6 +88,10 @@ public class Personnage {
             degats = forceFrappeBase;
         }
         adversaire.setPointsDeVie(adversaire.getPointsDeVie() - degats);
+        if(adversaire.getPointsDeVie() < 0) {
+            adversaire.setPointsDeVie(0);
+            System.out.println(adversaire.getNom() + " est mort !");
+        }
 
     }
 

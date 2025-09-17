@@ -32,6 +32,17 @@ public class Mage extends Personnage {
         this.puissanceSort = puissanceSort;
     }
 
+    public void lancerSort(Personnage p) {
+        if (this.mana >= 10) {
+            System.out.println(this.nom + " lance un sort sur " + p.nom + " et lui inflige " + this.puissanceSort + " points de dégâts.");
+            p.pointsDeVie -= this.puissanceSort;
+            this.mana -= 10;
+        } else {
+            System.out.println(this.nom + " n'a pas assez de mana pour lancer un sort.");
+        }
+    }
+
+
     @Override
     public String toString() {
         String s = super.toString();
