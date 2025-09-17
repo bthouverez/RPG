@@ -1,11 +1,7 @@
 import java.util.Random;
 
 public class Guerrier {
-    private String nom;
-    private int pointsDeVie;
-    private int forceFrappe;
-    private Arme arme;
-
+/*
     public Guerrier() {
         this.nom = "Guerrier";
         this.pointsDeVie = 100;
@@ -19,79 +15,5 @@ public class Guerrier {
         this.forceFrappe = force;
         this.arme = null;
     }
-
-    public String getNom() {
-        return nom;
-    }
-
-    public int getPointsDeVie() {
-        return pointsDeVie;
-    }
-
-    public int getForceFrappe() {
-        return forceFrappe;
-    }
-
-    public Arme getArme() {
-        return arme;
-    }
-
-    public void setArme(Arme arme) {
-        this.arme = arme;
-    }
-
-    public void setForceFrappe(int ff) {
-        this.forceFrappe = ff;
-    }
-
-    public void setNom(String nom) {
-        this.nom = nom;
-    }
-
-    public void setPointsDeVie(int pointsDeVie) {
-        this.pointsDeVie = pointsDeVie;
-    }
-
-    public void attaquer(Guerrier adversaire) {
-        Random rnd = new Random();
-
-        // Chance de rater
-        if(rnd.nextInt(100) <= 1) {
-            System.out.println(this.nom + " a raté son attaque contre " + adversaire.getNom() + " !");
-            return;
-        }
-
-        int forceFrappeBase = 0;
-        if(this.arme != null) {
-            forceFrappeBase = this.forceFrappe + this.arme.getDegats();
-        } else {
-            forceFrappeBase = this.forceFrappe;
-        }
-
-        int degats = 0;
-        if(rnd.nextInt(100) < 3) { // Chance de critique
-            System.out.println(this.nom + " attaque critique " + adversaire.getNom() + " avec une force de " + 2*forceFrappeBase);
-            degats = 2*forceFrappeBase;
-        } else {
-            System.out.println(this.nom + " attaque " + adversaire.getNom() + " avec une force de " + forceFrappeBase);
-            degats = forceFrappeBase;
-        }
-        adversaire.setPointsDeVie(adversaire.getPointsDeVie() - degats);
-
-    }
-
-    @Override
-    public String toString() {
-        String s = "Un Guerrier nommé " + this.nom + " a "
-                + this.pointsDeVie + " points de vie et une force de frappe de " + this.forceFrappe;
-        if(this.arme != null) {
-            s += " et une arme: " + this.arme;
-        } else {
-            s += " et pas d'arme";
-        }
-        return s;
-    }
-
-
-
+*/
 }
