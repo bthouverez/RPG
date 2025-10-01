@@ -7,6 +7,9 @@ public class Main {
         Pretre p1 = new Pretre("Alice", 90, 7, 70, 25);
         Guerrier g1 = new Guerrier("Charlie", 110, 55, 4);
 
+        // INTERDIT car classe Personnage abstraite
+        //Personnage perso = new Personnage();
+        //System.out.println(perso);
 
         System.out.println(p1);
         System.out.println(g1);

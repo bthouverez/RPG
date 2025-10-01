@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Personnage {
+public abstract class Personnage {
     public static int CPT = 0;
     protected int id;
     protected String nom;
