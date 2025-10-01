@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Pretre extends Personnage {
     private int mana;
     private int puissanceSoin;
@@ -40,6 +42,18 @@ public class Pretre extends Personnage {
             System.out.println(this.nom + " n'a pas assez de mana pour soigner.");
         }
     }
+
+    @Override
+    public void recevoirCoups(int degats) {
+        Random rnd = new Random();
+        int nb = rnd.nextInt(2);
+        if(nb == 1) {
+            super.recevoirCoups(degats);
+        } else {
+            System.out.println(this.nom + " a évité l'attaque !");
+        }
+    }
+
     @Override
     public String toString() {
         String s = super.toString();

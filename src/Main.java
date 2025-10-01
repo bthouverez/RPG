@@ -5,12 +5,15 @@ public class Main {
 
         Mage m1 = new Mage("Bob", 80, 8, 60, 20);
         Pretre p1 = new Pretre("Alice", 90, 7, 70, 25);
-        Guerrier g1 = new Guerrier("Charlie", 110, 55);
+        Guerrier g1 = new Guerrier("Charlie", 110, 55, 4);
 
-        for(int ii = 0; ii < 5; ii++) {
-            g1.attaquer(m1);
-            m1.lancerSort(g1);
-            p1.soigner(m1);
-        }
+
+        System.out.println(p1);
+        System.out.println(g1);
+
+        m1.attaquer(p1);
+        System.out.println(p1);
+        m1.attaquer(g1);
+        System.out.println(g1);
     }
 }
