@@ -1,3 +1,5 @@
+package dto;
+
 import java.util.Random;
 
 public abstract class Personnage {
@@ -12,7 +14,7 @@ public abstract class Personnage {
     public Personnage() {
         CPT++;
         this.id = CPT;
-        this.nom = "Personnage";
+        this.nom = "dto.Personnage";
         this.pointsDeVie = 100;
         this.pointsDeVieMax = 100;
         this.forceFrappe = 10;
@@ -130,7 +132,7 @@ public abstract class Personnage {
 
     @Override
     public String toString() {
-        String s = "Un Personnage nommé " + this.nom + " a "
+        String s = "Un dto.Personnage nommé " + this.nom + " a "
                 + this.pointsDeVie + " points de vie et une force de frappe de " + this.forceFrappe;
         if(this.arme != null) {
             s += " et une arme: " + this.arme;

@@ -1,3 +1,5 @@
+package dto;
+
 import java.util.Random;
 
 public class Pretre extends Personnage {

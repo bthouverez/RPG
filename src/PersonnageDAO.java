@@ -1,6 +1,11 @@
 
 // ========== DAO (Data Access Object) ==========
 
+import dto.Guerrier;
+import dto.Mage;
+import dto.Personnage;
+import dto.Pretre;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;

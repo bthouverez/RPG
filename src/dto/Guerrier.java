@@ -1,4 +1,4 @@
-import java.util.Random;
+package dto;
 
 public class Guerrier extends Personnage {
 

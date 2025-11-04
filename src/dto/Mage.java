@@ -1,4 +1,4 @@
-import java.util.Random;
+package dto;
 
 public class Mage extends Personnage {
     private int mana;
@@ -7,7 +7,7 @@ public class Mage extends Personnage {
 
     public Mage() {
         super(); // appelle un constructeur de la classe mère
-        this.nom = "Mage";
+        this.nom = "dto.Mage";
         this.forceFrappe = 5;
         this.mana = 50;
         this.puissanceSort = 15;

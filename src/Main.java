@@ -1,4 +1,8 @@
-import javax.swing.*;
+import dto.Guerrier;
+import dto.Mage;
+import dto.Personnage;
+import dto.Pretre;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
