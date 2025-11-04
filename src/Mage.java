@@ -49,4 +49,9 @@ public class Mage extends Personnage {
         s += ", mana: " + mana + ", puissanceSort: " + puissanceSort;
         return s;
     }
+
+    @Override
+    public String getType() {
+        return "Mage";
+    }
 }

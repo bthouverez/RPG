@@ -33,6 +33,10 @@ public abstract class Personnage {
         return this.id;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getNom() {
         return nom;
     }
@@ -109,6 +113,10 @@ public abstract class Personnage {
     }
 
     public void recevoirCoups(int degats) {
+        // parcourir le tableau des pieces d'armure
+        //  calculer l'arùure totale
+        // vérifier si les dégats - armure > 0
+        // mettre à jour les pdv
         this.pointsDeVie -= degats;
         if(this.pointsDeVie < 0) {
             this.pointsDeVie = 0;
@@ -116,6 +124,9 @@ public abstract class Personnage {
         }
     }
 
+
+
+    public abstract String getType();
 
     @Override
     public String toString() {

@@ -60,4 +60,9 @@ public class Pretre extends Personnage {
         s += ", mana: " + mana + ", puissanceSoin: " + puissanceSoin;
         return s;
     }
+
+    @Override
+    public String getType() {
+        return "Pretre";
+    }
 }
